@@ -218,8 +218,8 @@ public class TestMessageHandler {
         MessageHandler msgHdlr = new MessageHandler(messageQueue,50);
 
         msgHdlr.run();
-        msgHdlr.getSalesRepository().getMessageStats().put("test1",null);
-//        assertEquals( new BigDecimal(142.604).setScale(2,BigDecimal.ROUND_DOWN),msgHdlr.getSalesRepository().getMessageStats().get("test1"));
+
+        assertEquals( new BigDecimal(142.604).setScale(2,BigDecimal.ROUND_DOWN),msgHdlr.getSalesRepository().getMessageStats().get("test1"));
         assertEquals(new BigDecimal( 568.59).setScale(2,BigDecimal.ROUND_DOWN),msgHdlr.getSalesRepository().getMessageStats().get("test2"));
 
     }
