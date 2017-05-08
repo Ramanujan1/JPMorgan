@@ -1,0 +1,7 @@
+1) MessageHandler is the Core class that handles all the processing
+2) SalesRepository is used to store all the sales related data over time for all the messages processed for a queue instance.
+3) Message is the Entity class which is the message structure.
+4) I have used Hash Map for storing data as I consider lookup key value pair data to be best stored in this datastructure.
+5) I have used BigDecimal for accurate math value storage and manipulation.
+6) You can run the TestMessageHander.java for all scenarios to be tested as mentioned in the task
+7) The message handler has been written with the consideration that this is a single threaded appliication.
